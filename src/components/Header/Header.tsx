@@ -54,7 +54,6 @@ const Header: React.FC = () => {
     const NavItems = [
         // ... (Keep your NavItems array as is) ...
         { label: 'Home', href: '/index' },
-        { label: 'Training', href: '/training' },
         {
             label: 'Solutions',
             children: [
@@ -64,6 +63,13 @@ const Header: React.FC = () => {
         },
         { label: 'Products', href: '/products' },
         { label: 'Contact', href: '/contact' },
+         {
+            label: 'Training',
+            children: [
+                { label: 'Smaatix Training', href: '/training' },
+                { label: 'Clinimode Training', href: 'https://clinimode.com' },
+            ],
+        },
         { label: 'Careers', href: '/careers' },
         { label: 'About Us', href: '/about-us' },
     ];

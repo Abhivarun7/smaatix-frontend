@@ -17,6 +17,7 @@ import Products from './pages/Products.js';
 import Staffingsolutions from './pages/Staffingsolutions.js';
 import { ToastContainer } from 'react-toastify';
 import ApplicationForm from './components/JobApplicationForm/JobApplicationForm.tsx'
+import EmployeeIDForm from './pages/EmployeeIDForm.jsx'
 
 const App = () => {
     const ScrollToTop = () => {
@@ -28,6 +29,8 @@ const App = () => {
 
         return null;
     };
+
+
 
     return (
         <div className='background dark:text-white sm:max-w-screen max-sm:overflow-hidden'>
@@ -85,6 +88,11 @@ const App = () => {
                         path='*'
                         element={<Navigate to='/index' />}
                     />
+                    <Route
+                        path="/Employee-Id-Form/:uuid"
+                        element={<EmployeeIDForm />}
+                    />
+
                 </Route>
             </Routes>
         </div>

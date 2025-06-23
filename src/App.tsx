@@ -89,7 +89,7 @@ const App = () => {
                         element={<Navigate to='/index' />}
                     />
                     <Route
-                        path="/Employee-Id-Form/:uuid"
+                        path="/employee/:uuid"
                         element={<EmployeeIDForm />}
                     />
 

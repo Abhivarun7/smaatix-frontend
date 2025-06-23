@@ -2,13 +2,14 @@ const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
 export const getIDDetails = async (id) => {
   try {
-    const response = await fetch(`${backendUrl}/api/employees/basic/${id}`);
+    const response = await fetch(`${backendUrl}/api/employees/basic/${id}`); //getBasicDetails
 
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
 
     const data = await response.json();
+    console.log("data",data)
     return data;
 
   } catch (error) {
